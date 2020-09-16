@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\main.obj" 
+TO ".\Objects\01.PortBlink" 
+PRINT(".\Listings\01.m51")
