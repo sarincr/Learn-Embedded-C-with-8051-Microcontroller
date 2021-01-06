@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\main.obj" 
+TO ".\Objects\Blink" 
+PRINT(".\Listings\Blink.m51") RAMSIZE(256) 
