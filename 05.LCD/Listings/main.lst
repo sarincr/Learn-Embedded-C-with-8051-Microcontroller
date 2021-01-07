@@ -1,0 +1,50 @@
+C51 COMPILER V9.60.0.0   MAIN                                                              01/07/2021 05:45:10 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\main
+                    -.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include<reg52.h>              
+   2          #include<lcd.h>
+   3          
+   4          sbit RS = P0^0;                                                                   
+   5          sbit EN = P0^1;                            
+   6          sbit D4 = P2^4;
+   7          sbit D5 = P2^5;
+   8          sbit D6 = P2^6;
+   9          sbit D7 = P2^7;
+  10          
+  11          void main()
+  12          {
+  13   1        int i;
+  14   1        Lcd4_init();
+*** WARNING C206 IN LINE 14 OF main.c: 'Lcd4_init': missing function-prototype
+  15   1        Lcd4_Set_Cursor(1,1);
+  16   1        Lcd4_Clear();
+  17   1        Lcd4_Write_Char('S');
+  18   1      }
+*** WARNING C280 IN LINE 13 OF main.c: 'i': unreferenced local variable
+  19          
+  20          
+  21          
+  22          
+*** WARNING C290 IN LINE 84 OF main.c: missing return value
+*** WARNING C290 IN LINE 176 OF main.c: missing return value
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    612    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      17
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  4 WARNING(S),  0 ERROR(S)

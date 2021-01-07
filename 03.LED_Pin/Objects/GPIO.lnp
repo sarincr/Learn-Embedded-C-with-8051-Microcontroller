@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\main.obj" 
+TO ".\Objects\GPIO" 
+PRINT(".\Listings\GPIO.m51")
