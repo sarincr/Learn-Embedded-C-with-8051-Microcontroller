@@ -1,0 +1,43 @@
+C51 COMPILER V9.60.0.0   MAIN                                                              01/08/2021 18:18:21 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\main
+                    -.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include<reg52.h>
+   2          sbit button=P0^0;  
+   3          sbit led=P1^0;     
+   4          
+   5          void main()
+   6          {
+   7   1        P1=0x01; 
+   8   1        while(1)
+   9   1          {
+  10   2          if(button==1)
+  11   2          {
+  12   3            led=1; 
+  13   3          }
+  14   2          else
+  15   2          {
+  16   3            led=0;
+  17   3          }
+  18   2          }
+  19   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     14    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
