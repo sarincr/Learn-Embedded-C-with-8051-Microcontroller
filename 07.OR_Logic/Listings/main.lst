@@ -1,0 +1,53 @@
+C51 COMPILER V9.60.0.0   MAIN                                                              05/17/2021 04:37:11 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\Objects\main.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE main.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\main
+                    -.lst) TABS(2) OBJECT(.\Objects\main.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          sbit Led  = P1^7; 
+   3          sbit SwitchA =P0^6;  
+   4          sbit SwitchB =P0^7; 
+   5          int main(void)
+   6          {
+   7   1          P1  = 0x00; 
+   8   1          P0 = 0xFF;  
+   9   1          while(1)
+  10   1          {
+  11   2              if(SwitchA == 0 || SwitchB == 0)
+  12   2              {
+  13   3                  Led =0;  
+  14   3              }
+  15   2               if(SwitchA == 1 || SwitchB == 0)
+  16   2              {
+  17   3                  Led =1;  
+  18   3              }
+  19   2               if(SwitchA == 0 || SwitchB == 1)
+  20   2              {
+  21   3                  Led =1;  
+  22   3              }
+  23   2               if(SwitchA == 1 || SwitchB == 1)
+  24   2              {
+  25   3                  Led =1;  
+  26   3              }
+  27   2          }
+  28   1      
+  29   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     40    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
